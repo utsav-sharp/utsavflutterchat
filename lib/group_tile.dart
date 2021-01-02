@@ -16,7 +16,7 @@ class GroupTile extends StatelessWidget {
         print("GroupTile ${userName}");
         print("groupId ${groupId}");
         print("groupName ${groupName}");
-        Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage(groupId: groupId, userName: userName, groupName: groupName,)));
+        //Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage(groupId: groupId, userName: userName, groupName: groupName,)));
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
