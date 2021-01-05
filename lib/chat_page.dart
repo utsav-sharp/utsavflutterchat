@@ -840,12 +840,26 @@ Container(
       currentSelfie = mediaData.data;
       imageString = base64Encode(currentSelfie);
       //print("utsav  ${currentSelfie.toString()}");
-      print("utsav  ${imageString.toString()}");
+      print("utsav message  ${imageString.toString()}");
+      setState(() {
+        print("this is working 123");
+        print("this is working 123");
+        print("this is working 123");
+        print("this is working 123");
+        isLoading=false;
+        _sendMessage(imageString,1);
+
+        print("this is working");
+        print("this is working");
+        print("this is working");
+        print("this is working");
+
+      });
     }
 
     String url;
     // var bytes = await mediaData.data.readAsBytes();
-    try {
+ /*   try {
       String fileName=DateTime.now().millisecondsSinceEpoch.toString();
       fb.StorageReference _storage = fb.storage().ref().child('Chat Images').child(fileName);
       fb.UploadTaskSnapshot uploadTaskSnapshot = await _storage.put(mediaData.data, fb.UploadMetadata(contentType: 'image/png')).future;
@@ -863,7 +877,7 @@ Container(
       });
       Fluttertoast.showToast(msg: "Error: "+e);
       print(e);
-    }
+    }*/
 /*    if (mediaData != null) {
       currentSelfie = mediaData.data;
       imageString = base64Encode(currentSelfie);
